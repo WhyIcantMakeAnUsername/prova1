@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang=it>
+<head>
+<link rel=stylesheet href=http://getskeleton.com/dist/css/skeleton.css>
+<title>saluto</title>
+<meta charset=utf-8>
+</head>
+<body>
+<div class=container>
+<div class=row>
+<div class="twelve columns">
+<!--
+l'utente inserisce il proprio nome in una input box (testo), conferma cliccando su un button, l'applicazione 
+
+-->
+<dd>titolo</dd>
+<p>inserisci il tuo nome, le app ti saluterà</p>
+<img src=icona.png class=u-full-width>
+<form name=saluto>
+<input type=text name=nome placeholder="scrivi il tuo nome" required>
+<input type=reset value=annulla onclick=annula> &nbsp;
+<button type=button value=saluta onclick=saluta>saluto</button>
+<p id=risposta> </p>
+
+</form>
+</div>
+
+
+</div>
+</div>
+
+<script>
+function saluta(){
+	var nome=document.forms[0].nome.value;
+	document.getElementById("risposta").innerHTML="ciao "+nome+"
+}
+function annulla(){
+		document.getElementById
+}
+
+</script>
+</body>
+</html>
